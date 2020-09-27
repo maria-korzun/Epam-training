@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="main">
+            <div id="container">
+                <div id="content" role="main">
+                    <header>
+                        <img src="./logo.png" alt="logo">
+                        <section id="home">
+                            <h1>HTML BASICS
+                            </h1>
+                        </section>
+                        <nav>
+                            <a href="#home">Home</a>
+                            <a href="#registration">Registration</a>
+                            <a href="#headings">Headings</a>
+                            <a href="#type_of_lists">Types of lists</a>
+                            <a href="#image">Image</a>
+                            <a href="#table">Table</a>
+                            <a href="#blockquotes">Blockquotes</a>
+                            <a href="#text_formats">Text formats</a>
+                        </nav>
+                        <hr>
+                    </header>
+                    <article aria-label="Fructose article">
+                        <p>
+                            <strong> Fructose</strong>, or
+                            <strong>fruit suga</strong>r, is a simple
+                            <em>ketonic monosaccharide</em> found in many plants, where it is often bonded to glucose to form the disaccharide sucrose. It is one of the three dietary <u>monosaccharides</u> , along with glucose and galactose, that are
+                            absorbed directly into blood during digestion. Its formula is C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> and its density is 1.694 g/cm<sup>3</sup> . Fructose was discovered by French chemist
+                            <a href="#">Augustin-Pierre Dubrunfaut</a> in
+                            <ins>1847</ins>, <del>not in 1848</del>.
+                        </p>
+                        <p>
+                            It makes us <strong>strong</strong>!
+                            <em>This is emphasized.</em>
+                        </p>
+                        <p>
+                            Excessive consumption of fructose (especially from sugar-sweetened beverages) may contribute to insulin resistance, obesity, elevated <abbr title="Low-density lipoprotein">LDL</abbr> cholesterol and triglycerides, leading to
+                            metabolic syndrome. <abbr title="The European Food Safety Authority">The EFSA</abbr> stated that fructose may be preferable over sucrose and glucose in sugar-sweetened foods and beverages because of its lower effect on postprandial
+                            blood sugar levels, and noted that <i>high intakes of fructose may lead
+                                to metabolic complications such as dyslipidaemia, insulin resistance, and increased visceral adiposity</i> (this is a citation).
+                        </p>
+                        <hr>
+                    </article>
+                    <section id="registration" aria-label="Registration">
+                        <form>
+                            <fieldset>
+                                <label>Login:</label><input type="text"><br>
+                                <label>Email:</label><input type="email"><br>
+                                <label>Password:</label><input type="password"><br>
+                                <label>Select Programming Language</label>
+                                <select>
+  <option value="JavaScript" selected>JavaScript</option>
+  <option value="Python" >Python</option>
+  <option value="Python" >PHP</option>
+                            </select> <br><br>
+                                <textarea rows="4" cols="25"></textarea><br>
+                                <button type="submit">Submit</button>
+                            </fieldset>
+                        </form>
+                    </section>
+                    <section id="headings">
+                        <p>
+                            h1 defines the most important heading. h6 defines the least important heading. Font-size for h1 is the same as font-size for h2, because we have to use only one h1 on the page, and it is commonly used inside header
+                        </p>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                        <hr>
+                    </section>
+                    <section id="type_of_lists">
+                        <h3>Unordered Shopping List</h3>
+                        <ul>
+                            <li>
+                                Vegetables:
+                                <ul>
+                                    <li>
+                                        Potatos
+                                    </li>
+                                    <li>
+                                        Carrots
+                                    </li>
+                                    <li>
+                                        Cucumbers
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Fruits:
+                                <ul>
+                                    <li>
+                                        Apples
+                                    </li>
+                                    <li>
+                                        Bananas
+                                    </li>
+                                    <li>
+                                        Pears
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Milk</li>
+                            <li>Butter</li>
+                        </ul>
+                        <h3>
+                            Definition List
+                        </h3>
+                        <p>
+                            <strong>
+                            HTML
+                          </strong><br> HTML is the standard markup language to create Web pages.
+                        </p>
+                        <p>
+                            <strong>
+                            CSS
+                          </strong><br> CSS describes how HTML elements are to be displayed. </p>
+                        <p>
+                            <strong>
+                            JavaScript
+                          </strong><br> JavaScript is a scripting languages, primarily used on the Web.
+                        </p>
+                        <h3>
+                            Ordered To-do List
+                        </h3>
+                        <ol>
+                            <li>
+                                Wash your hands
+                            </li>
+                            <li>
+                                Clean your apartment
+                            </li>
+                            <li>
+                                Do your homework
+                                <ol type="A">
+                                    <li>
+                                        Create HTML Page
+                                    </li>
+                                    <li>
+                                        Check all requirements & folder structure
+                                    </li>
+                                    <li>
+                                        Upload files
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                      </section>
+                      <section id="image" aria-label="Image">
+                        <hr>
+                        <img src="./fruits.jpg" alt="fruits">
+                        <hr>
+                    </section>
+                    <section id="table" >
+                        <h2>
+                            Sugar content of selected common plant foods (g/100g)
+                        </h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>
+                                        Food item
+                                    </td>
+                                    <td>
+                                        Free Fructose
+                                    </td>
+                                    <td>
+                                        Free Glucose
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Banana
+                                    </td>
+                                    <td>
+                                        4.9
+                                    </td>
+                                    <td>
+                                        5.0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Grapes
+                                    </td>
+                                    <td>
+                                        8.1
+                                    </td>
+                                    <td>
+                                        7.2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Apple
+                                    </td>
+                                    <td>
+                                        5.9
+                                    </td>
+                                    <td>
+                                        2.4
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Pineapple
+                                    </td>
+                                    <td>
+                                        2.1
+                                    </td>
+                                    <td>
+                                        1.7
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                    </section>
+                    <section id="blockquotes">
+                        <h2>
+                            Blockquotes
+                        </h2>
+                        <p>
+                            Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.
+                        </p>
+                        <blockquote>
+                            "I think we're all sensitive, everyone has a certain way about themselves that people don't like to let their emotions out too often. I think people tend to suppress them and hold them in, so I think there's a bit of that in me." <br>
+                            <a href="#">Jason Statham</a>
+                        </blockquote>
+                        <hr>
+                    </section>
+                    <section id="text_formats">
+                        <h2>
+                            Text formats
+                        </h2>
+                        <h3>
+                            Preformatted Text
+                        </h3>
+                        <pre>
+Text in a <strong>pre</strong> element
+is displayed in a fixed-width
+font, and it preserves
+both           <strong>spaces</strong> and
+<strong>line breaks</strong>
+                      </pre>
+                      <h3>
+                        This is code
+                      </h3>
+                      <pre>
+                        <code>
+.container {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+}
+                        </code>
+                      </pre>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
