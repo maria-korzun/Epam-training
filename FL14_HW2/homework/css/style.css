@@ -28,6 +28,10 @@
     color: #76cdd8
 }
 
+.tm-card:hover .tm-text-color-white.small.tm-font-thin.mb-0 {
+    color: white
+}
+
 .tm-card:nth-child(2) h2 {
     color: #76cdd8;
 }
@@ -63,15 +67,49 @@
     ;
 }
 
-.tm-card:hover .tm-text-color-white.small.tm-font-thin.mb-0 {
-    color: white
-}
-
 .btn-primary,
 .btn-secondary {
     background-color: #119898
 }
 
 .tm-feature-list {
-    padding-right: 40px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 25px;
+}
+
+.img-fluid:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.tm-pricing-table {
+    width: 93%;
+    height: 90%;
+    border-color: #119898;
+}
+
+.container>section:nth-child(5)>div:nth-child(2) .tm-pricing-table:hover {
+    box-shadow: 0 0 0 0.2rem #24d4d4
+}
+
+.container>section:nth-child(5)>div:nth-child(2) .tm-pricing-table:hover .btn {
+    background: #24d4d4
+}
+
+.container>section:nth-child(5)>div:nth-child(3) .tm-pricing-table:hover .btn {
+    background: #24d4d4
+}
+
+.container>section:nth-child(5)>div:nth-child(3) .tm-pricing-table:hover .tm-pricing-discount {
+    display: block;
+}
+.container>section:nth-child(5)>div:nth-child(3) .tm-pricing-table:hover .tm-pricing-discount>.tm-pricing-discount__star{
+   color: red;
+}
+.container>section:nth-child(5)>div:nth-child(3) .tm-pricing-table:hover .tm-pricing-discount>.tm-pricing-discount__text{
+    color: #24d4d4;
+ }
+.container>section:nth-child(5)>div:nth-child(3) .tm-pricing-table:hover {
+    box-shadow: 0 0 0 0.2rem #24d4d4;
+    height: 95%;
 }
