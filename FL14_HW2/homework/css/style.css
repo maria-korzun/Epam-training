@@ -1,0 +1,77 @@
+.tm-mb-30 {
+    margin-bottom: 30px;
+}
+
+.tm-bg-color-primary {
+    background-color: #76cdd8
+}
+
+.tm-bg-color-secondary {
+    background-color: #119898
+}
+
+.tm-col-md-reverse {
+    flex-direction: row-reverse;
+}
+
+.btn {
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(118, 205, 216)
+}
+
+.tm-card:nth-child(2):hover h2,
+.tm-card:hover p,
+.tm-card:hover q {
+    color: #76cdd8
+}
+
+.tm-card:nth-child(2) h2 {
+    color: #76cdd8;
+}
+
+.tm-card {
+    position: relative;
+}
+
+.tm-card:nth-child(2n+1):hover>div:nth-child(2):after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 0;
+    border-color: transparent #76cdd8 transparent transparent;
+}
+
+.tm-card:nth-child(2n):hover>div:nth-child(2):after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 0;
+    border-color: #76cdd8 transparent transparent transparent;
+    ;
+}
+
+.tm-card:hover .tm-text-color-white.small.tm-font-thin.mb-0 {
+    color: white
+}
+
+.btn-primary,
+.btn-secondary {
+    background-color: #119898
+}
+
+.tm-feature-list {
+    padding-right: 40px;
+}
