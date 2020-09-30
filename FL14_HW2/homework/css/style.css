@@ -22,8 +22,20 @@
     background-color: rgb(118, 205, 216)
 }
 
-.tm-card:nth-child(2):hover h2,
-.tm-card:hover p,
+.tm-card:nth-child(2) q {
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+.tm-card:nth-child(2) q::before {
+    content: "";
+}
+
+.tm-card:nth-child(2) q::after {
+    content: "";
+}
+
+.tm-card:nth-child(3):hover h2,
 .tm-card:hover q {
     color: #76cdd8
 }
@@ -40,7 +52,7 @@
     position: relative;
 }
 
-.tm-card:nth-child(2n+1):hover>div:nth-child(2):after {
+.tm-card:nth-child(2n+1):hover>div:nth-child(2)::after {
     position: absolute;
     top: 0;
     right: 0;
@@ -53,7 +65,7 @@
     border-color: transparent #76cdd8 transparent transparent;
 }
 
-.tm-card:nth-child(2n):hover>div:nth-child(2):after {
+.tm-card:nth-child(2n):hover>div:nth-child(2)::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -76,6 +88,10 @@
     padding-right: 35px;
     padding-left: 35px;
     padding-bottom: 25px;
+}
+
+section:nth-child(4) h2 {
+    color: #76cdd8
 }
 
 .img-fluid:hover {
@@ -103,13 +119,54 @@
 .container>section:nth-child(5)>div:nth-child(3) .tm-pricing-table:hover .tm-pricing-discount {
     display: block;
 }
-.container>section:nth-child(5)>div:nth-child(3) .tm-pricing-table:hover .tm-pricing-discount>.tm-pricing-discount__star{
-   color: red;
+
+.container>section:nth-child(5)>div:nth-child(3) .tm-pricing-table:hover .tm-pricing-discount>.tm-pricing-discount__star {
+    color: red;
 }
-.container>section:nth-child(5)>div:nth-child(3) .tm-pricing-table:hover .tm-pricing-discount>.tm-pricing-discount__text{
+
+.container>section:nth-child(5)>div:nth-child(3) .tm-pricing-table:hover .tm-pricing-discount>.tm-pricing-discount__text {
     color: #24d4d4;
- }
+}
+
 .container>section:nth-child(5)>div:nth-child(3) .tm-pricing-table:hover {
     box-shadow: 0 0 0 0.2rem #24d4d4;
     height: 95%;
+}
+
+.tm-form-header {
+    background: #24d4d4;
+}
+
+.tm-contact-form::before {
+    content: "";
+    position: absolute;
+    z-index: 9999;
+    top: -49px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+.tm-contact-form::after {
+    content: "";
+    position: absolute;
+    z-index: 9999;
+    bottom: -49px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+.tm-contact-form .form-control:focus {
+    border-color: #24d4d4;
+    box-shadow: 0 0 0 0.2rem #24d4d4;
+    outline: none;
+}
+
+.tm-contact-form select:focus {
+    border-color: #24d4d4;
+    box-shadow: 0 0 0 0.2rem #24d4d4;
+    outline: none;
 }
