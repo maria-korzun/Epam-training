@@ -1,1 +1,255 @@
-// Write your styles here
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.highlighted {
+    content: "";
+    position: absolute;
+    background-color: map-get($colors, "mark");
+    z-index: -1;
+}
+
+@mixin button ($color-button) {
+    background-color: $color-button;
+    color: #ffffff;
+    border-radius: 3px;
+    border-style: none;
+    width: $lenght-of-button;
+    height: 2.3rem;
+    font-weight: bold;
+    font-size: 0.7rem;
+    cursor: pointer;
+    outline: none;
+}
+
+@mixin link() {
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 5rem;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    background-color: map-get($colors, "wall");
+}
+
+.landing-logo {
+    img {
+        width: 1.5rem;
+        height: auto;
+        margin-left: 10px;
+        vertical-align: top;
+    }
+    p {
+        margin-left: 0.3rem;
+        font-size: 0.7rem;
+        display: inline-block;
+        font-family: $font-family-header-text;
+        font-weight: normal;
+        text-align: center;
+        span {
+            display: block;
+            font-size: 0.4rem;
+            font-family: $font-family-header-text;
+        }
+    }
+}
+
+
+header {
+    width: 100%;
+    background: {
+        image: $background-img;
+        repeat: no-repeat;
+        attachment: scroll;
+        position: center;
+        size: cover;
+    }
+    border-bottom-right-radius: 500px 200px;
+    .header-wrap {
+        color: map-get($colors, "text");
+        margin-left: 7rem;
+        padding-top: 15px;
+        padding-bottom: 5rem;
+        .header_heading {
+            margin-top: 60px;
+            font-size: 3.5rem;
+            width: 24rem;
+            font-weight: bolder;
+            font-family: 'Hind', sans-serif;
+            line-height: 4rem;
+            position: relative;
+            z-index: 1;
+            color: map-get($colors, "text");
+        }
+        .header_heading::after {
+            @extend .highlighted;
+            width: 15rem;
+            height: 3rem;
+            left: 0;
+            bottom: 0.5rem;
+            
+        }
+        .header_text {
+            font-size: 0.7rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            width: 28rem;
+            line-height: 1.3rem;
+            white-space: pre-line;
+            font-family: $font-family-header-text;
+            color: map-get($colors, "header-text");
+        }
+        a {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.section {
+    position: relative;
+    padding: 1rem 1rem 7rem;
+    background-color: map-get($colors, "wall");
+    &_text {
+        color: map-get($colors, "text");
+        margin: auto;
+        font-size: 2rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        position: relative;
+        z-index: 1;
+        width: 20rem;
+    }
+    &_text::after {
+        @extend .highlighted;
+        width: 8.5rem;
+        height: 2.1rem;
+        top: 0.1rem;
+        right: 1.2rem;
+        bottom: 0.5rem;
+    }
+    &_card_wrap {
+        padding-top: 1rem;
+        .section_card {
+            background-color: map-get($colors, "card");
+            padding: 0.5rem 0 0.5rem 0.5rem;
+            width: 85%;
+            max-width: 45rem;
+            margin: auto;
+            margin-top: 1rem;
+            border-radius: 3px;
+            font-size: 0rem;
+            border-radius: 3px;
+            &_img {
+                width: 40%;
+                height: auto;
+                border-radius: 3px;
+                vertical-align: top;
+            }
+            &_right_container {
+                font-size: 1rem;
+                display: inline-block;
+                width: 60%;
+                height: auto;
+                padding: 1.7rem 1.7rem 0 1.7rem;
+                .section_card_heading {
+                    color: #ffffff;
+                    margin-bottom: 1.5rem;
+                    text-align: center;
+                    font-size: 0.9rem;
+                    font-family: 'Source Sans Pro', sans-serif;
+                }
+                .section_card_text {
+                    color: map-get($colors, "secondary-text");
+                    font-size: 0.7rem;
+                    font-family: 'Fresca', sans-serif;
+                    line-height: 1rem;
+                    margin-bottom: 1.5rem;
+                }
+                a {
+                    font-size: 0.7rem;
+                    font-family: 'Hind', sans-serif;
+                    display: block;
+                    margin: auto;
+                    width: 5rem;
+                }
+            }
+        }
+    }
+    &_banner {
+        position: absolute;
+        z-index: 1;
+        bottom: -2.5rem;
+        left: 15%;
+        display: flex;
+        align-items: center;
+        width: 70%;
+        height: 5rem;
+        border-radius: 3px;
+        padding-right: 6rem;
+        padding-left: 6rem;
+        background: linear-gradient(to right, map-get($colors, "gradient-start"), map-get($colors, "gradient-end"));
+        &_text_wrap {
+            width: calc(100% - 7rem);
+        }
+        &_heading {
+            position: relative;
+            font-weight: bold;
+            font-family: 'Hind', sans-serif;
+            color: map-get($colors, "text");
+        }
+        &_heading::after {
+            @extend .highlighted;
+            width: 2.1rem;
+            height: 1.5rem;
+            left: 4rem;
+            bottom: 0.3rem;
+        }
+        &_text {
+            font-size: 0.5rem;
+            font-family: $banner-text-font;
+            color: map-get($colors, "secondary-text");
+        }
+    }
+}
+
+.footer {
+    background-color: map-get($colors, "card");
+    color: #ffffff;
+    width: 100%;
+    &-wrap {
+        padding: 5rem 5rem 1.5rem 5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Fresca', sans-serif;
+    }
+    &_logo {
+        width: 6rem;
+    }
+    &_text,
+    &-cr {
+        font-size: 0.5rem;
+    }
+    &_text {
+        width: 10rem;
+    }
+    &-cr {
+        width: 8rem;
+        line-height: 3.2rem;
+    }
+}
+
+button {
+    @include button(map-get($colors, "button"))
+}
+
+a {
+    @include link()
+}
