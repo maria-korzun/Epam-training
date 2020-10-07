@@ -1,26 +1,369 @@
-/*
-  * Colors references
+.post1 {
+    background-color: #F3D250;
+}
 
-  header bg-color: #99ccff;
-  footer bg-color: #162b4d;
-  header hover: #162b4d;
-  text color: #484848;
+.post2 {
+    background-color: #8D8741;
+}
 
-  .post-1 {
-    background: #F3D250;
-  }
-  .post-2 {
-    background: #8D8741;
-  }
-  .post-3 {
-    background: #659DBD;
-  }
-  .post-4 {
-    background: #DAAD86;
-  }
+.post3 {
+    background-color: #659DBD;
+}
 
-  * Feel free to add new colors if you need it
- */
+.post4 {
+    background-color: #DAAD86;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Your styles go here */
+body {
+    font-size: 16px;
+    font-family: "Roboto";
+}
+
+header {
+    width: 100%;
+    background-color: #99ccff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    padding: 1rem 0rem;
+    width: calc(100% - 400px);
+    font-size: 0;
+    flex-shrink: 0;
+}
+
+.logo_text_travel {
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.logo_text_blog {
+    font-weight: 100;
+    color: #484848;
+    font-size: 2.5rem;
+}
+
+nav {
+    width: 400px;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.navigation_button {
+    padding: 35px 0px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 100;
+    width: 100px;
+    text-align: center;
+}
+
+#sandwich {
+    display: none;
+}
+
+.navigation_button:hover {
+    background-color: #162b4d;
+}
+
+.first_section {
+    width: 100%;
+    background-image: url(/FL14_HW5/homework/img/section1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    padding-top: 15rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.first_section_title {
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.first_section_text {
+    line-height: 1.5rem;
+}
+
+.second_section {
+    color: #484848;
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.main {
+    margin-right: 1.5rem;
+    width: calc(65% - 1.5rem);
+    flex-shrink: 0;
+}
+
+.post {
+    width: 100%;
+    display: flex;
+}
+
+.post:nth-child(2n-1) .post_img {
+    order: 1;
+}
+
+.post:nth-child(2n-1) .post_info {
+    order: 2;
+}
+
+.post:nth-child(2n-1) .post_info .post_text {
+    order: 1;
+}
+
+.post:nth-child(2n-1) .post_info .post_date {
+    order: 2;
+}
+
+.post:nth-child(2n) .post_img {
+    order: 2;
+}
+
+.post:nth-child(2n) .post_info {
+    order: 1;
+}
+
+.post:nth-child(2n) .post_info .post_text {
+    order: 2;
+    text-align: right;
+}
+
+.post:nth-child(2n) .post_info .post_date {
+    order: 1;
+}
+
+.post_img {
+    width: 50%;
+    vertical-align: bottom;
+}
+
+.post_info {
+    width: 50%;
+    display: flex;
+    padding: 1rem;
+}
+
+.post_info:hover {
+    opacity: 0.5;
+}
+
+.post_text {
+    width: 80%;
+}
+
+.post_h2 {
+    margin-bottom: 1rem;
+}
+
+.post_p,
+.news_p {
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+.post_h2,
+.post_date {
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.post_date {
+    width: 20%;
+    text-align: center;
+}
+
+aside {
+    width: 35%;
+    flex-shrink: 0;
+}
+
+.news {
+    border: 1px solid black;
+    margin-bottom: 1.5rem;
+}
+
+.news_img {
+    width: 100%;
+}
+
+.news_text {
+    padding-right: 1.7rem;
+    padding-left: 1.7rem;
+}
+
+.news_h3 {
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.news_p {
+    margin-bottom: 2rem;
+}
+
+.button {
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+.button:hover {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #162b4d;
+    color: #ffffff;
+    padding: 0rem 2rem;
+}
+
+.first_text_footer {
+    width: calc(100% - 150px);
+}
+
+.first_text_footer_first_p,
+.second_text_footer_first_p {
+    margin-bottom: 0.5rem;
+}
+
+.second_text_footer {
+    width: 150px;
+}
+
+@media screen and (max-width:1279px) {
+    header {
+        flex-direction: column;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+    nav {
+        width: 100%;
+        justify-content: center;
+        order: 1;
+        margin-bottom: 1rem;
+    }
+    .navigation_button {
+        display: none;
+    }
+    #sandwich {
+        display: initial;
+    }
+    .first_section {
+        padding-top: 7rem;
+    }
+    .second_section {
+        width: 700px;
+    }
+    .main {
+        width: calc(58% + 1.5rem);
+    }
+    .post {
+        flex-direction: column;
+    }
+    .post:nth-child(2n-1) .post_img,
+    .post:nth-child(2n-1) .post_info,
+    .post:nth-child(2n-1) .post_info .post_text,
+    .post:nth-child(2n-1) .post_info .post_date,
+    .post:nth-child(2n) .post_img,
+    .post:nth-child(2n) .post_info,
+    .post:nth-child(2n) .post_info .post_text,
+    .post:nth-child(2n) .post_info .post_date {
+        order: initial;
+    }
+    .post:nth-child(2n) .post_info .post_text {
+        text-align: initial;
+    }
+    .post_info {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        padding-right: 3rem;
+    }
+    .post_h2 {
+        font-size: 2.5rem;
+    }
+    .post_text {
+        margin-bottom: 1rem
+    }
+    .post_text,
+    .post_h2 {
+        text-align: left;
+    }
+    .post_img,
+    .post_info,
+    .post_text,
+    .post_date {
+        width: 100%;
+    }
+    footer {
+        width: initial;
+        height: 220px;
+        padding-top: 3rem;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .first_text_footer {
+        width: 100%;
+    }
+    .second_text_footer {
+        width: 100%;
+    }
+    .first_text_footer_second_p {
+        margin-bottom: 1rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .second_section {
+        flex-direction: column;
+        width: 300px;
+    }
+    .main {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        margin-right: 0;
+    }
+    footer {
+        padding-top: 2rem;
+    }
+    .first_text_footer {
+        width: 250px;
+    }
+}
