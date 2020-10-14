@@ -1,0 +1,70 @@
+body {
+    background-image: linear-gradient(to bottom right, rgb(217, 157, 228), rgb(87, 100, 248));
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-size: 16px;
+    padding: 2rem;
+}
+
+.skip_button,
+.question_style,
+.option_button,
+.prize,
+.over,
+.win {
+    display: none;
+}
+
+.question_style {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.control_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.control_button {
+    padding: 1rem;
+    background-color: rgb(168, 168, 168);
+    border: 1px solid black;
+    width: 10rem;
+    color: rgb(80, 77, 100);
+    outline: none;
+    cursor: pointer;
+}
+
+.option_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.option_button {
+    cursor: pointer;
+    background-color: rgb(69, 65, 138);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    width: 15rem;
+    min-height: 9rem;
+    outline: none;
+    padding: 0.5rem;
+}
+
+.prize {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.over,
+.win {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+}

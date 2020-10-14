@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW_8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="js/questions.js"></script>
+    <script src="js/app.js"></script>
+    <div class="control_container">
+        <button class="start_button control_button" onclick="startGame()" type="button">Start new game</button>
+        <button class="skip_button control_button" id="skip" onclick="skipQuestion()" type="button">Skip question</button>
+    </div>
+    <p id="question" class="question_style"></p>
+    <div class="option_container">
+        <button id="option0" class="option_button" onclick="checkOption(0)" type="button"></button>
+        <button id="option1" class="option_button" onclick="checkOption(1)" type="button"></button>
+        <button id="option2" class="option_button" onclick="checkOption(2)" type="button"></button>
+        <button id="option3" class="option_button" onclick="checkOption(3)" type="button"></button>
+    </div>
+    <div class="prize" id="total_prize_div">
+        <span>Total prize:</span>
+        <span id="total_prize"></span>
+    </div>
+    <div class="prize" id="current_prize_div">
+        <span>Prize on current round: </span>
+        <span id="current_prize"></span>
+    </div>
+    <div id="game_over_div" class="over">
+        <span>Game over. Your prize is: </span>
+        <span id="game_over"></span>
+    </div>
+    <div id="game_win_div" class="win">
+        <span>Congratulations! You won 1000000.</span>
+    </div>
+</body>
+
+</html>
