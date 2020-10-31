@@ -1,10 +1,8 @@
-/* TODO: your styles goes here*/
-
 body {
-    /* background-image: url(./material-icons);
+    background-image: url(./material-icons);
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
-    -webkit-user-select: none; */
+    -webkit-user-select: none;
 }
 
 .icon_element {
@@ -32,7 +30,6 @@ body {
 .custom_context_menu_button {
     padding-left: 10px;
     height: 25px;
-    /* line-height: 25px; */
     border: none;
     width: 100%;
     text-align: start;
