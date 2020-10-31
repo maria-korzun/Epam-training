@@ -81,7 +81,7 @@ renameButton.className = 'custom_context_menu_button'
 renameButton.textContent = 'Rename'
 renameButton.onclick = () => {
   let title = currentTarget.getElementsByTagName('input')[0]
-  title.removeAttribute("disabled")
+  title.removeAttribute('disabled')
   title.setAttribute('outline', 'initial')
   if (title.value.match(/.*\..*/)) {
     title.focus()
@@ -156,7 +156,7 @@ function createFolderStructure(arrayOfChildren, key) {
     let iconTitle = element.domObject.firstChild
     if (element.jsObject.folder) {
       iconTitle.onclick = () => {
-        iconTitle.nextSibling.classList.toggle("display_none");
+        iconTitle.nextSibling.classList.toggle('display_none');
 
       }
     }
@@ -199,7 +199,7 @@ function createDomElements(folder, titleText, key) {
   let keyLoopString = key.join('_')
   let title = document.createElement('input')
   title.setAttribute('value', `${titleText}`)
-  title.setAttribute("disabled", "disabled");
+  title.setAttribute('disabled', 'disabled');
   let icon = document.createElement('span')
   icon.classList = 'material-icons icon'
   title.className = 'title'
