@@ -1,1 +1,59 @@
 /* TODO: your styles goes here*/
+
+body {
+    /* background-image: url(./material-icons);
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none; */
+}
+
+.icon_element {
+    display: inline-block;
+}
+
+.display_none {
+    display: none;
+}
+
+.container_element {
+    margin-left: 20px;
+}
+
+.custom_context_menu {
+    padding: 10px;
+    background-color: #ffffff;
+    width: 90px;
+    height: 50px;
+    border: 1px solid rgb(243, 243, 243);
+    box-shadow: 5px 5px 5px rgb(243, 243, 243);
+    border-radius: 5px;
+}
+
+.custom_context_menu_button {
+    padding-left: 10px;
+    height: 25px;
+    /* line-height: 25px; */
+    border: none;
+    width: 100%;
+    text-align: start;
+    outline: none
+}
+
+.custom_context_menu_button:disabled {
+    background-color: transparent;
+    color: black;
+}
+
+.icon_title_container:hover {
+    background-color: rgb(230, 245, 255);
+    border-radius: 5px;
+}
+
+.icon {
+    margin-left: 5px;
+}
+
+.title {
+    border: none;
+    background-color: transparent;
+}
