@@ -1,11 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+
 /* START: Task 1 Styles */
+
+.table_task1 {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border: 1px solid black;
+    margin: auto;
+    font-size: 20px;
+}
+
+td,
+th {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.first_bg_color {
+    background-color: white;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
 
 /* END: Task 1 Styles */
 
+
 /* START: Task 2 Styles */
+
+.task2 {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container_task2 {
+    width: 400px;
+    margin: auto;
+}
+
+.information_container_task2 {
+    margin-bottom: 12px;
+}
+
+.message {
+    padding: 15px 50px 10px 10px;
+    color: #ffffff;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.invalid_data_task2 {
+    background-color: rgb(229 130 127);
+    display: none;
+}
+
+.successful_data_task2 {
+    background-color: rgb(72 126 3);
+    display: none;
+}
+
+.form_data_container_task2 {
+    height: 40px;
+}
+
+.input_task2 {
+    height: 100%;
+    width: calc(100% - 62px);
+    border: 1px solid black;
+    outline: none;
+}
+
+.input_task2::placeholder {
+    color: gray;
+    font-size: 11px;
+}
+
+.input_task2_invalid {
+    height: 100%;
+    width: calc(100% - 62px);
+    border: 1px solid coral;
+    outline: none;
+}
+
+.button_task2 {
+    height: 100%;
+    width: 50px;
+    margin-left: 8px;
+}
+
 
 /* END: Task 2 Styles */
 
+
 /* START: Task 3 Styles */
+
+.task3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.container_task3 {
+    position: relative;
+    width: 600px;
+    height: 330px;
+    display: inline-block;
+}
+
+.court {
+    width: 100%;
+    height: 100%;
+}
+
+.left_hoop,
+.right_hoop {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+
+.left_hoop {
+    top: 157.5px;
+    left: 32px;
+}
+
+.right_hoop {
+    top: 157.5px;
+    right: 32px;
+}
+
+.game_score {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message_task3 {
+    position: absolute;
+    top: 115px;
+    left: 200px;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #ffffff;
+    text-align: center;
+    z-index: 9999;
+}
+
+.display {
+    display: none;
+}
+
+.game_ball {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 280px;
+    top: 145px;
+}
+
+.ball_asset {
+    width: 100%;
+    height: 100%;
+}
+
 
 /* END: Task 3 Styles */
