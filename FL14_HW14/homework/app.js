@@ -68,6 +68,8 @@ class MyFile {
 
 let currentTarget
 let initialKey = []
+let body = document.getElementsByTagName('html')[0]
+body.id = 'body'
 const rootNode = document.getElementById('root');
 let children = createFolderStructure(dataCopy, initialKey)
 rootNode.appendChild(children.childrenContainer)
@@ -86,7 +88,7 @@ renameButton.onclick = () => {
   if (title.value.match(/.*\..*/)) {
     title.focus()
     title.setSelectionRange(0, title.value.search(/\./))
-  }else {
+  } else {
     title.select()
   }
 
@@ -109,7 +111,7 @@ customContextMenu.style.display = 'none'
 customContextMenu.style.position = 'absolute'
 
 for (let i = 0; i < customContextMenu.children.length; i++) {
-  customContextMenu.children[i].disabled = true
+  customContextMenu.children[i].setAttribute('disabled', 'disabled')
 }
 
 
@@ -119,6 +121,15 @@ window.oncontextmenu = (e) => {
   customContextMenu.style.left = `${e.pageX}px`
   customContextMenu.style.top = `${e.pageY}px`
   customContextMenu.style.display = 'block'
+  let target = e.target
+  while (!target.id) {
+    target = target.parentElement
+  }
+  if (target !== currentTarget) {
+    for (let i = 0; i < customContextMenu.children.length; i++) {
+      customContextMenu.children[i].setAttribute('disabled', 'disabled')
+    }
+  }
 }
 window.onclick = (e) => {
   if (e.target !== customContextMenu) {
@@ -126,7 +137,7 @@ window.onclick = (e) => {
   }
 
   let titleCollection = document.getElementsByClassName('title')
-  if (e.target !== renameButton || e.target !== customContextMenu) {
+  if (e.target !== renameButton) {
     for (let i = 0; i < titleCollection.length; i++) {
       titleCollection[i].setAttribute('disabled', 'disabled')
     }
@@ -143,7 +154,7 @@ function createFolderStructure(arrayOfChildren, key) {
     if (jsObject.folder) {
       let folder = createFolfer(jsObject, keyLoop)
       return folder
-    }else {
+    } else {
       let domObject = createDomElements(false, jsObject.title, keyLoop)
       let file = new MyFile(jsObject, domObject)
       return file
@@ -154,21 +165,34 @@ function createFolderStructure(arrayOfChildren, key) {
   newChildrenArray.forEach(element => {
     childrenContainer.appendChild(element.domObject)
     let iconTitle = element.domObject.firstChild
-    if (element.jsObject.folder) {
-      iconTitle.onclick = () => {
-        iconTitle.nextSibling.classList.toggle('display_none');
 
+    iconTitle.onclick = (e) => {
+      if (element.jsObject.folder) {
+        iconTitle.nextSibling.classList.toggle('display_none');
+        if (iconTitle.getElementsByTagName('span')[0].textContent === 'folder') {
+          iconTitle.getElementsByTagName('span')[0].textContent = 'folder_open'
+        }
+        else {
+          iconTitle.getElementsByTagName('span')[0].textContent = 'folder'
+        }
       }
+      let target = e.target
+      while (!target.id) {
+        target = target.parentElement
+      }
+      currentTarget = target
+
     }
 
     iconTitle.oncontextmenu = (e) => {
       for (let i = 0; i < customContextMenu.children.length; i++) {
-        customContextMenu.children[i].disabled = false
+        customContextMenu.children[i].removeAttribute('disabled')
       }
       let element = e.target
       while (!element.id) {
         element = element.parentElement
       }
+      element.classList.add('selected_element')
       currentTarget = element
       return false
     }
@@ -201,7 +225,8 @@ function createDomElements(folder, titleText, key) {
   title.setAttribute('value', `${titleText}`)
   title.setAttribute('disabled', 'disabled');
   let icon = document.createElement('span')
-  icon.classList = 'material-icons icon'
+
+  icon.classList = folder ? 'material-icons icon folder' : 'material-icons icon file'
   title.className = 'title'
   icon.textContent = folder ? 'folder' : 'insert_drive_file'
   let iconTitleContainer = document.createElement('div')
@@ -224,11 +249,13 @@ function createFolfer(jsObject, keyLoop) {
     folder = new Folder(jsObject, domObject)
     let emptyDiv = document.createElement('div')
     emptyDiv.textContent = 'Folder is empty'
+    emptyDiv.className = 'display_none'
     domObject.appendChild(emptyDiv)
-  }else {
+  } else {
     let children = createFolderStructure(jsObject.children, keyLoop)
     let childrenArray = children.childrenArray
     let childrenContainer = children.childrenContainer
+    childrenContainer.className = 'display_none'
     domObject.appendChild(childrenContainer)
     folder = new Folder(jsObject, domObject, childrenArray)
   }

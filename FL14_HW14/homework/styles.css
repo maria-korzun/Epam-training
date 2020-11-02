@@ -33,12 +33,24 @@ body {
     border: none;
     width: 100%;
     text-align: start;
-    outline: none
-}
+    outline: none;
+    background-color: transparent;
 
+}
+.custom_context_menu_button:hover{
+    background-color: rgb(230, 245, 255);;
+ }
 .custom_context_menu_button:disabled {
     background-color: transparent;
     color: black;
+}
+
+
+
+
+.icon_title_container{
+    display: flex;
+    align-items: center;
 }
 
 .icon_title_container:hover {
@@ -50,7 +62,21 @@ body {
     margin-left: 5px;
 }
 
+.file{
+    filter: invert(50%) sepia(4%) saturate(0%) hue-rotate(290deg) brightness(96%) contrast(84%);
+}
+.folder{
+    filter: invert(90%) sepia(18%) saturate(4123%) hue-rotate(353deg) brightness(94%) contrast(86%);
+}
+.open_folder{
+    filter: invert(50%) sepia(4%) saturate(0%) hue-rotate(290deg) brightness(96%) contrast(84%);
+}
+.selected_element{
+    background-color:#0000
+
+}
 .title {
     border: none;
     background-color: transparent;
+    vertical-align: middle;
 }
