@@ -1,0 +1,19 @@
+.root_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation {
+    width: 45%;
+}
+
+.content_view {
+    width: 40%;
+}
+
+.modal_window {
+    position: absolute;
+    left: 50%;
+    top: 50%
+}
+
