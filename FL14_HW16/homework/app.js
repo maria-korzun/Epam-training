@@ -190,7 +190,7 @@ function createBookForm(action) {
 
         modalWindowDiscardChanges.appendChild(modalWindowDiscardChangesYes)
         modalWindowDiscardChanges.appendChild(modalWindowDiscardChangesNo)
-        root.appendChild(modalWindowDiscardChanges)
+        contentView.appendChild(modalWindowDiscardChanges)
     }
 
     form.appendChild(saveButton)

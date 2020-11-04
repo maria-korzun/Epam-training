@@ -3,17 +3,88 @@
     justify-content: space-around;
 }
 
+button {
+    cursor: pointer;
+}
+
 .navigation {
+    font-size: 20px;
+    color: black;
+    height: 100vh;
     width: 45%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url(https://torange.biz/photo/29/HD/paper-book-textures-ancient-29140.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: scroll;
+    font-weight: bolder;
+}
+
+.navigation>div,
+.content_view>form>div {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation>div>span {
+    width: 70%;
+    cursor: pointer;
+}
+
+.navigation>div>span:hover {
+    color: darkred;
+}
+
+.navigation>button {
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
 }
 
 .content_view {
+    font-size: 18px;
+    color: #ffffff;
+    background-image: url(https://i.pinimg.com/originals/24/8e/c3/248ec3f07e67db50292c736ef37aeaae.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 10px;
     width: 40%;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+    overflow: scroll;
 }
 
 .modal_window {
     position: absolute;
-    left: 50%;
-    top: 50%
+    left: calc(50% - 50px);
+    top: calc(50% - 25px);
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.content_view>form {
+    margin-top: 40px;
+}
+
+.content_view>form>div>input {
+    width: 70%;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.content_view>form>button {
+    margin-top: 40px;
+}
