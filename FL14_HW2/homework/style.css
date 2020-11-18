@@ -1,5 +1,47 @@
-/* Your code goes here */
 body {
-  padding: 0;
-  margin: 0 0 5vh;
+    padding: 0;
+    margin: 0 0 5vh;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #000000;
+    margin:10px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(7, 90px);
+    grid-template-rows: repeat(6, 90px);
+    align-self: center;
+    justify-self: center;
+    grid-gap: 10px;
+}
+
+main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-item-week-days{
+  align-items: flex-end;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.main-item-days {
+    border: 1px solid rgb(219, 224, 224);
+}
+.main-item-days-future{
+  background-color:rgb(219, 224, 224);
 }
