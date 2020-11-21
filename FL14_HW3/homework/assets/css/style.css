@@ -1,0 +1,179 @@
+﻿* {
+    outline: none;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+.header_custom {
+    background-image: url(/FL14_HW3/homework/assets/img/header-bg.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    margin-top: -110px;
+}
+
+.first_section {
+    height: 500px;
+}
+
+.section_padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.rectangle {
+    width: 60px;
+    height: 4px;
+    background-color: rgb(75, 75, 75);
+}
+
+.articles_section2,
+.block_section2,
+.carusel_section3,
+.custom_form,
+.footer_content {
+    width: 70%;
+}
+
+.offset {
+    height: 50px;
+}
+
+.nav-link,
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.button_touch {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.block_img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.work_div {
+    padding: 0;
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
+}
+
+.custom_column {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row_margin {
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+}
+
+.second_section {
+    background-color: rgb(234, 234, 234);
+}
+
+.behind_block {
+    background-image: url(/FL14_HW3/homework/assets/img/references-image-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto;
+    width: 70%;
+    height: 70%;
+    top: 40%;
+    left: -12%;
+    z-index: -1;
+}
+
+.prev_slider {
+    left: -20%;
+    top: calc(50% - 70px)
+}
+
+.next_slider {
+    right: -20%;
+    top: calc(50% - 70px)
+}
+
+.circle_container {
+    bottom: -70px;
+    width: 80px;
+    left: calc(50% - 40px);
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.ligth_circle {
+    background-color: rgb(187, 179, 195);
+}
+
+.dark_circle {
+    background-color: rgb(91, 69, 109);
+}
+
+.contacts_section {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.input_contact_section,
+.input_contact_section:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.input_contact_section::placeholder {
+    color: rgb(175, 175, 175);
+    font-size: 0.6rem;
+}
+
+.form_button {
+    border-radius: 0;
+    background-color: rgb(55, 55, 55);
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    font-size: 0.7rem;
+}
+
+.custom_footer {
+    background-image: url(/FL14_HW3/homework/assets/img/footer-bg.jpg);
+    color: #fff;
+}
+
+.custom_footer a {
+    color: #fff;
+}
+
+.right_reserved {
+    text-align: right;
+    font-size: 0.5rem;
+}
+
+.nav_bg {
+    background-image: url(/FL14_HW3/homework/assets/img/footer-bg.jpg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+}
