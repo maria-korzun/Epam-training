@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tools</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <!-- <link href="/FL14_HW9/homework/src/css/style.css"  rel="stylesheet"> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="info_container">
+        <h2>
+            Let’s play!
+        </h2>
+        <p>
+            <pre>
+  Rules:
+- Scissors beats a paper,
+- Paper beats rock,
+- Rock beats scissors.
+- And we play up to three wins! 
+      </pre>
+        </p>
+        <button id="reset">RESET</button>
+    </div>
+    <div class="game_container">
+        <div class="game_play_container">
+            <div id="opponent" class="opponent">
+            </div>
+            <div id="player" class="player">
+            </div>
+        </div>
+        <div class="game_button_score_container">
+          <div class="game_buttons_container">
+            <button id="rock_button" class="button">
+              <img src="./img-compressed/rock.jpeg" alt="Rock button">
+            </button>
+            <button id="paper_button" class="button" alt="Paper button">
+              <img src="./img-compressed/paper.jpeg">
+            </button>
+            <button id="scissors_button" class="button" alt="Scissors button">
+              <img src="./img-compressed/scissors.jpeg">
+            </button>
+        </div>
+         <p class="score_info" id="score_info"></p>
+        </div>
+      
+    </div>
+    <script src="./index.js"></script>
+    
+</body>
+
+</html>

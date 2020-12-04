@@ -1,0 +1,14 @@
+.button {
+    height: 50px;
+    background-color: #ffffff;
+    margin: 0px 20px 0px;
+}
+
+
+.game_buttons_container {
+    height: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
