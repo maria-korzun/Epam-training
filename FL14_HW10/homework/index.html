@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JS Patterns</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="tabs_container">
+            <div class="tab"> <button class="button" id="all_employees">All Employees</button></div>
+            <div class="tab"> <button class="button" id="all_units">All Units</button></div>
+            <div class="tab">
+                <button class="button" id="warning_employees">Warning Employees</button>
+                <select name="selection" id="selection">
+                <option value="lowPerformance">Low performance</option>
+                <option value="topPerformance">Top performance</option>
+                <option value="salaryAboveAverageSalary">Salary is above average by pool</option>
+                <option value="salaryLowerAverageSalary">Salary is lower average by pool</option>
+              </select>
+            </div>
+        </nav>
+    </header>
+    <main id="content">
+        <ul id="content_list">
+
+        </ul>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

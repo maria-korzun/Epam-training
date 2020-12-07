@@ -1,0 +1,19 @@
+body {
+  padding: 0;
+}
+.highlight{
+color: red;
+}
+.unhighlight{
+  color: black;
+}
+.tabs_container{
+  display: flex;
+  justify-content: space-around;
+}
+.tab{
+  width: 33%;
+}
+.button{
+width: 100%;
+}
