@@ -35,7 +35,7 @@ body {
 
 header {
   width: 100%;
-  background-image: url(/FL14_HW3/homework/img/m-h-day.jpg);
+  background-image: url("../img/m-h-day.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;

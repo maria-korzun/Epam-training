@@ -1,4 +1,4 @@
-import renderNameAndScore from './renderNameAndScore'
+import renderNameAndScore from './renderNameAndScore.js'
 
 export default function renderResult(game, gameState, cellButtonsArray) {
     if (Array.isArray(gameState) && gameState.length === 3) {

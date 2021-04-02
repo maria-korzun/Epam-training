@@ -199,6 +199,9 @@ class Employee {
 Employee.list = []
 Employee.lastId = 0
 
+let a = new Employee()
+let n = new Employee()
+
 
 class Manager extends Employee {
     constructor(firstName, lastName, birthday, salary, department) {

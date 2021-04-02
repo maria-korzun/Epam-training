@@ -22,7 +22,7 @@ body {
   width: 80%;
   height: 100%;
   margin: auto;
-  background-image: url(/FL14_HW4/homework/img/header-bg.png);
+  background-image: url("../img/header-bg.png");
   background-size: cover;
   background-position: center;
 }
@@ -185,7 +185,7 @@ main .first_section .smal_container .small_container_block .small_container_cont
 main .second_section {
   text-align: center;
   background-color: #0a023d;
-  background-image: url(/FL14_HW4/homework/img/space-bg.png);
+  background-image: url("../img/space-bg.png");
   color: #ffffff;
   padding: 4rem 0rem;
 }
@@ -199,7 +199,7 @@ main .second_section .rectangle {
 
 footer {
   width: 100%;
-  background-image: url(/FL14_HW4/homework/img/footer-bg.jpeg);
+  background-image: url("../img/footer-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;

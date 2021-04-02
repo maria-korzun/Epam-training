@@ -1,0 +1,22 @@
+body {
+  height: 100vh; }
+
+header {
+  display: flex;
+  height: 20%; }
+  header button {
+    flex-basis: 50%;
+    /* align-items: flex-start; */
+    }
+
+.board {
+  height: 80%;
+  display: grid;
+  grid-template: 200px 200px 200px;
+  grid-gap: 10px;
+  background-color: black; }
+  .board .cell {
+    grid-gap: 10px;
+    background-color: #ffffff; }
+
+/*# sourceMappingURL=body.css.map */

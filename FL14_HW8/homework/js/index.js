@@ -61,7 +61,6 @@ const todos = [
 }(jQuery));
 
 
-
 function checkLocalStorage() {
   if (!window.localStorage.getItem('todos')) { updateLocalStorage(todos) }
 }

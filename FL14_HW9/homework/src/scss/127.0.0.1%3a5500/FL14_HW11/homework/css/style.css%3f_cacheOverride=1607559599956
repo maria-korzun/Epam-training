@@ -1,0 +1,35 @@
+/* Your style goes here */
+
+body {
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 20%;
+}
+
+header button {
+    flex-basis: 25%;
+}
+
+.board {
+    /* width: 320px; */
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+    background-color: black;
+}
+
+.board .cell {
+    background-color: #ffffff;
+}

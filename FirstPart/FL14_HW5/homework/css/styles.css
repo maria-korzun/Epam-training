@@ -81,7 +81,7 @@ nav {
 
 .first_section {
     width: 100%;
-    background-image: url(/FL14_HW5/homework/img/section1.jpg);
+    background-image: url("..//img/section1.jpg");
     background-position: center;
     background-size: cover;
     height: 30rem;

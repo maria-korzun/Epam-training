@@ -1,6 +1,7 @@
 import renderResult from './renderResult.js'
 import renderCellSign from './renderCellSign.js'
 
+
 export default function gameFlow(board, game) {
     let boardContainer = document.getElementById('main')
     let cellButtons = boardContainer.children
